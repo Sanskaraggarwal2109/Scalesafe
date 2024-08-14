@@ -1,4 +1,5 @@
 ![image](https://github.com/user-attachments/assets/dd5398ce-1233-4423-9ac8-58dbe14045e8)
+
 ScaleSafe is a cloud storage application like Google Drive or Dropbox. Users can upload their files to a cloud server on one machine and then download them on another.
 
 Overview
@@ -17,6 +18,9 @@ Supporting mobile or desktop clients.
 Below is a topology of the services being implemented.
 
 Fileshare diagram
+
+![image](https://github.com/user-attachments/assets/2b23b930-3cfc-4f00-9e99-e9492224006a)
+
 
 Frontend
 The frontend service is a TypeScript application built with the React framework, designed to provide an intuitive web interface for uploading, viewing, and downloading files. It also offers administrative capabilities, such as changing usernames and passwords. The frontend ensures that file content and metadata are correctly routed to their respective storage locations.
@@ -55,6 +59,9 @@ Schema Component: Validates application data with Pydantic models.
 ChristopherGS created a great diagram that details the flow of data of a FastAPI application using SQLAlchemy, Pydantic and Alembic 1.
 
 SQLAlchemy Diagram Flow
+
+![image](https://github.com/user-attachments/assets/85b75f30-7687-4e0b-a9c3-377b58f22e7b)
+
 
 Database
 File metadata is stored using a PostgreSQL relational data store. The data we are going to be storing is very structured and has well defined relationships between entities. For example, we might store a user in the users table that has a one to many relationship between files in the file table. Both user and file have clear attributes we can define such as name, password or email for user and filename, size or extension for file.
