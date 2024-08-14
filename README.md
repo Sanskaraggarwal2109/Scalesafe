@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/dd5398ce-1233-4423-9ac8-58dbe14045e8)
 ScaleSafe is a cloud storage application like Google Drive or Dropbox. Users can upload their files to a cloud server on one machine and then download them on another.
 
 Overview
